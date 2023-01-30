@@ -312,8 +312,11 @@ p {
   line-height: 1.5rem;
   font-weight: 500;
 }
-.pink-bg {
+.light-pink-bg {
   background-color: #fff7ea;
+}
+.deep-pink-bg {
+  background-color: #FFF1F1;
 }
 .sky-bg {
   background-color: #ecf9ff;
@@ -356,6 +359,15 @@ p {
 }
 .mb-5rem {
   margin-bottom: 5rem;
+}
+.pt-5rem{
+  padding-top: 5rem;
+}
+.pt-4rem{
+  padding-top:4rem;
+}
+.pb-4rem{
+  padding-bottom: 4rem;
 }
 .small-mb {
   margin-bottom: 1.5rem;
@@ -2165,7 +2177,45 @@ select:focus {
   background: url(../images/assess-process/ap-btm-banner.png) no-repeat center;
   background-size: cover;
 }
-
+/*============== Career page ==================*/
+.career-banner{
+  background: url(../images/career-page/career-banner.png) no-repeat center;
+  background-size: cover;
+}
+.career-banner .career-banner-title {
+  line-height: 6rem;
+}
+.career-banner .fp-banner-arrow {
+  margin-top: 4rem;
+}
+.be-well-sec{
+  margin-top: 5rem;
+}
+.be-well-sec .arc-card{
+  padding: 3.5rem 2rem;
+}
+.be-well-sec .arc-card:last-child .arc-card-para {
+  color: #6b7591;
+  margin-bottom: 0;
+}
+.be-well-sec .arc-card:last-child .arc-card-title {
+  color: #071a48;
+}
+.be-well-sec  .arc-card-title {
+  font-size: 1.5rem;
+    line-height: 1.7rem;
+}
+.be-well-sec  .arc-card-para {
+  font-size: 1.1rem;
+}
+.be-well-sec .arc-card-img img {
+  width: 5rem;
+  height: 4rem;
+  object-fit: scale-down;
+}
+.arc-section .section-para {
+  margin: .6rem auto;
+}
 @media all and (max-width: 767px) {
   .m-w-100 {
     width: 100%;

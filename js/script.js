@@ -3,7 +3,6 @@
 $(".fp-blog-card-container").slick({
   dots: false,
   infinite: true,
-  arrows: false,
   slidesToShow: 3,
   autoplay: true,
   autoplaySpeed: 2000,
@@ -45,13 +44,12 @@ if ($(window).width() <= 768) {
   }
 }
 
-// fHome page blog slider
+// Home page blog slider
 if ($(window).width() <= 768) {
   
   $(".blog-card-container.home-blog").slick({
     dots: false,
     infinite: true,
-    arrows: false,
     slidesToShow: 3,
     autoplay: false,
     autoplaySpeed: 2000,
