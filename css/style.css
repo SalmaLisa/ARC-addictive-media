@@ -216,6 +216,10 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+.grid-col-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
 
 .justify-center {
   justify-content: center;
@@ -316,7 +320,7 @@ p {
   background-color: #fff7ea;
 }
 .deep-pink-bg {
-  background-color: #FFF1F1;
+  background-color: #fff1f1;
 }
 .sky-bg {
   background-color: #ecf9ff;
@@ -360,13 +364,13 @@ p {
 .mb-5rem {
   margin-bottom: 5rem;
 }
-.pt-5rem{
+.pt-5rem {
   padding-top: 5rem;
 }
-.pt-4rem{
-  padding-top:4rem;
+.pt-4rem {
+  padding-top: 4rem;
 }
-.pb-4rem{
+.pb-4rem {
   padding-bottom: 4rem;
 }
 .small-mb {
@@ -374,6 +378,9 @@ p {
 }
 .mid-mb {
   margin-bottom: 2.5rem;
+}
+.p-relative {
+  position: relative;
 }
 
 /* common css end*/
@@ -2178,7 +2185,7 @@ select:focus {
   background-size: cover;
 }
 /*============== Career page ==================*/
-.career-banner{
+.career-banner {
   background: url(../images/career-page/career-banner.png) no-repeat center;
   background-size: cover;
 }
@@ -2188,10 +2195,10 @@ select:focus {
 .career-banner .fp-banner-arrow {
   margin-top: 4rem;
 }
-.be-well-sec{
+.be-well-sec {
   margin-top: 5rem;
 }
-.be-well-sec .arc-card{
+.be-well-sec .arc-card {
   padding: 3.5rem 2rem;
 }
 .be-well-sec .arc-card:last-child .arc-card-para {
@@ -2201,11 +2208,11 @@ select:focus {
 .be-well-sec .arc-card:last-child .arc-card-title {
   color: #071a48;
 }
-.be-well-sec  .arc-card-title {
+.be-well-sec .arc-card-title {
   font-size: 1.5rem;
-    line-height: 1.7rem;
+  line-height: 1.7rem;
 }
-.be-well-sec  .arc-card-para {
+.be-well-sec .arc-card-para {
   font-size: 1.1rem;
 }
 .be-well-sec .arc-card-img img {
@@ -2213,9 +2220,151 @@ select:focus {
   height: 4rem;
   object-fit: scale-down;
 }
-.arc-section .section-para {
-  margin: .6rem auto;
+.be-well-sec .section-para {
+  margin: 0.6rem auto;
 }
+.how-can-grow-sec {
+  background: url(../images/career-page/how-can-grow-bg.png) no-repeat center;
+  background-size: cover;
+}
+.how-can-grow-sec .info {
+  color: #fff;
+}
+.how-can-grow-sec .info img {
+  margin-left: -8rem;
+  margin-top: 7rem;
+}
+.how-can-grow-sec .how-grow-slide p {
+  position: relative;
+  bottom: 7.5rem;
+  left: 3rem;
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  font-weight: 300;
+}
+.how-can-grow-sec .slick-slide {
+  margin-right: 2.5rem;
+}
+.how-can-grow-sec .slick-slide img {
+  width: 100%;
+  height: 100%;
+}
+.how-grow-slider {
+  margin-left: 5rem;
+}
+.how-grow-slider .slick-prev:before,
+.how-grow-slider .slick-next:before {
+  content: "";
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: block;
+}
+.how-grow-slider .slick-prev:before {
+  background: url(../images/conditions/slide-prev.png) no-repeat center !important;
+}
+
+.how-grow-slider .slick-next:before {
+  background: url(../images/conditions/slide-next.png) no-repeat center !important ;
+}
+.how-grow-slider .slick-next {
+  left: -35.7rem;
+  right: auto;
+}
+.how-grow-slider .slick-prev {
+  left: -40.5rem;
+  right: auto;
+}
+.how-grow-slider .slick-next,
+.how-grow-slider .slick-prev {
+  top: 21.5rem;
+}
+.ethics-list img {
+  margin-right: 2rem;
+}
+.ethics-list .list-item:first-child {
+  border-top: 1px solid #c5c5c5;
+}
+.ethics-list .list-item {
+  padding: 2rem 0;
+  border-bottom: 1px solid #c5c5c5;
+}
+.career-testimonial-container .testimonial-item {
+  box-shadow: #0000001a 0px 10px 50px;
+  padding: 4rem;
+  border-radius: 1rem;
+}
+.meta-data img {
+  margin-right: 1rem;
+}
+.career-testimonial-container .slick-prev:before,
+.career-testimonial-container .slick-next:before {
+  content: "";
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: block;
+}
+.career-testimonial-container .slick-next:before {
+  background: url(../images/conditions/slide-next.png) no-repeat center !important ;
+  background-size: cover !important;
+}
+.career-testimonial-container .slick-next {
+  right: 1rem;
+  left: auto;
+}
+.intern-section {
+  background: url(../images/career-page/intern-bg.png) no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+.intern-section .header-small-text {
+  color: #fff;
+  font-weight: 300;
+}
+.intern-cards-container {
+margin-top: 7rem;
+z-index: 1;
+}
+.intern-cards-container::before{
+  display: block;
+  content: "";
+  background: url(../images/career-page/intern-vector.png) no-repeat center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.intern-cards-container .card {
+  background-color: #fff;
+  margin-right: 1.4rem;
+  text-align: center;
+  padding: 4rem 1.6rem 3rem;
+  width: 18rem;
+}
+.intern-cards-container .card:nth-child(2n+2){
+  margin-top: 7rem;
+}
+.intern-cards-container .card:nth-child(2n+1){
+  margin-bottom: 7rem;
+}
+.intern-cards-container .card p {
+  font-size: 1.7rem;
+  line-height: 2rem;
+  color: #071a48;
+}
+.intern-section .intern-btn{
+  background-color: #FBB416;
+  color: #fff;
+  margin-top: 5rem;
+  border-radius: 1rem;
+  padding: 1.5rem 5.5rem;
+  font-size: 1.7rem;
+}
+
 @media all and (max-width: 767px) {
   .m-w-100 {
     width: 100%;

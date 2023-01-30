@@ -104,3 +104,32 @@ $(".get-assessed-cards").slick({
     },
   ],
 });
+
+//Career page
+
+$(".how-grow-slider").slick({
+  dots: false,
+  infinite: true,
+  autoplay: false,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint:768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+
+$(".career-testimonial-container").slick({
+  dots: false,
+  infinite: true,
+  autoplay: false,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+});
