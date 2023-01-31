@@ -257,6 +257,9 @@ body {
 .com-padding {
   padding: 10rem 0;
 }
+.sm-com-padding {
+  padding: 7rem 0;
+}
 .extra-padding {
   padding: 2rem;
 }
@@ -354,6 +357,9 @@ p {
 }
 .mid-mt {
   margin-top: 2.5rem;
+}
+.mb-2rem {
+  margin-bottom: 2rem;
 }
 .mb-3rem {
   margin-bottom: 3rem;
@@ -2227,12 +2233,19 @@ select:focus {
   background: url(../images/career-page/how-can-grow-bg.png) no-repeat center;
   background-size: cover;
 }
+.how-can-grow-sec .info .header-small-text{
+  color: #fff;
+} 
+.how-can-grow-sec .info .header{
+  margin-left: 4rem;
+} 
 .how-can-grow-sec .info {
   color: #fff;
 }
 .how-can-grow-sec .info img {
   margin-left: -8rem;
-  margin-top: 7rem;
+  margin-top: 9rem;
+  width: 42rem;
 }
 .how-can-grow-sec .how-grow-slide p {
   position: relative;
@@ -2242,6 +2255,12 @@ select:focus {
   font-size: 1.8rem;
   line-height: 2.2rem;
   font-weight: 300;
+}
+.how-can-grow-sec .content{
+  padding: 6rem 0;
+}
+.how-can-grow-sec .how-grow-slider{
+  margin-top: 5rem;
 }
 .how-can-grow-sec .slick-slide {
   margin-right: 2.5rem;
@@ -2260,28 +2279,32 @@ select:focus {
   height: 4rem;
   border-radius: 50%;
   display: block;
+  opacity: 1;
 }
 .how-grow-slider .slick-prev:before {
-  background: url(../images/conditions/slide-prev.png) no-repeat center !important;
+  background: url(../images/career-page/how-can-prev.png) no-repeat center !important;
+  background-size: cover !important;
 }
 
 .how-grow-slider .slick-next:before {
-  background: url(../images/conditions/slide-next.png) no-repeat center !important ;
+  background: url(../images/career-page/how-can-next.png) no-repeat center !important ;
+  background-size: cover !important;
 }
 .how-grow-slider .slick-next {
-  left: -35.7rem;
+  left: -32.5rem;
   right: auto;
 }
 .how-grow-slider .slick-prev {
-  left: -40.5rem;
+  left: -37.5rem;
   right: auto;
 }
 .how-grow-slider .slick-next,
 .how-grow-slider .slick-prev {
-  top: 21.5rem;
+  top: 18rem;
 }
 .ethics-list img {
   margin-right: 2rem;
+  width: 5rem;
 }
 .ethics-list .list-item:first-child {
   border-top: 1px solid #c5c5c5;
@@ -2290,10 +2313,111 @@ select:focus {
   padding: 2rem 0;
   border-bottom: 1px solid #c5c5c5;
 }
+.ethics-list .list-item h3{
+  letter-spacing: -0.1rem;
+}
+.ethics-list .list-item .right .text{
+  margin-left: 2rem;
+}
+.get-feel-section .content{
+  padding: 8rem 0;
+}
+.get-feel-section .header h2 {
+  font-size: 3.3rem;
+  letter-spacing: -.1rem;
+}
+.get-feel-section .header .para {
+  margin: 1rem auto;
+  line-height: 1.8rem;
+}
+.get-feel-section .gallery {
+  flex-wrap: wrap;
+}
+.get-feel-section .gallery img {
+  width: 100%;
+}
+.get-feel-section .gallery li {
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.get-feel-section .gallery li:nth-child(1) {
+  width: 18.5rem;
+  margin-top: 3rem;
+  margin-top: 8rem;
+  position: relative;
+}
+.get-feel-section .gallery li:nth-child(1):before {
+  content: "";
+  display: block;
+  background: url(../images/career-page/get-feel-left.png) no-repeat center;
+  background-size: contain;
+  width: 8rem;
+  height: 4.9rem;
+  position: absolute;
+  top: -2rem;
+  left: -3.5rem;
+}
+.get-feel-section .gallery li:nth-child(2) {
+  width: 11.5rem;
+}
+.get-feel-section .gallery li:nth-child(3) {
+  width: 25rem;
+  position: relative;
+}
+.get-feel-section .gallery li:nth-child(3):before {
+  content: "";
+  display: block;
+  background: url(../images/career-page/get-feel-top.png) no-repeat center;
+  background-size: contain;
+  width: 5rem;
+  height: 4.9rem;
+  position: absolute;
+  top: -2.5rem;
+  right: -2rem;
+}
+.get-feel-section .gallery li:nth-child(4) {
+  width: 18.5rem;
+  margin-top: 4.3rem;
+}
+.get-feel-section .gallery li:nth-child(5) {
+  width: 11.5rem;
+  margin-left: 7rem;
+}
+.get-feel-section .gallery li:nth-child(6) {
+  width: 11.5rem;
+  margin-top: -9rem;
+}
+.get-feel-section .gallery li:nth-child(7) {
+  width: 12rem;
+  margin-top: -4rem;
+  position: relative;
+}
+.get-feel-section .gallery li:nth-child(7):after {
+  content: "";
+  display: block;
+  background: url(../images/career-page/get-feel-btm.png) no-repeat center;
+  background-size: contain;
+  width: 3.2rem;
+  height: 4rem;
+  position: absolute;
+  bottom: 0;
+  right: -4.5rem;
+}
+.get-feel-section .gallery li:nth-child(8) {
+  width: 18rem;
+  margin-top: -4rem;
+}
+.get-feel-section .gallery li:nth-child(9) {
+  width: 12rem;
+  margin-top: -4rem;
+}
 .career-testimonial-container .testimonial-item {
   box-shadow: #0000001a 0px 10px 50px;
-  padding: 4rem;
+  padding: 3rem 3.3rem;
   border-radius: 1rem;
+}
+.testimonial-section .testimonials .header{
+  margin-top: 3rem;
 }
 .meta-data img {
   margin-right: 1rem;
@@ -2314,6 +2438,36 @@ select:focus {
   right: 1rem;
   left: auto;
 }
+.testimonial-section .img-container {
+  width: 42%;
+  position: relative;
+}
+.testimonial-section .img-container:before {
+  content: "";
+  display: block;
+  background: url(../images/career-page/testimonial-top.png) no-repeat center;
+  background-size: contain;
+  width: 13rem;
+  height: 16rem;
+  position: absolute;
+  top: -5.7rem;
+  left: -6.5rem;
+}
+.testimonial-section .img-container:after {
+  content: "";
+  display: block;
+  background: url(../images/conditions/ball-ellipse.png) no-repeat center;
+  background-size: contain;
+  width: 5rem;
+    height: 5rem;
+    position: absolute;
+    bottom: -1rem;
+    left: -7rem;
+    transform: rotate(-74deg);
+}
+.testimonial-section .img-container img {
+  width: 100%;
+}
 .intern-section {
   background: url(../images/career-page/intern-bg.png) no-repeat center;
   background-size: cover;
@@ -2323,20 +2477,20 @@ select:focus {
   color: #fff;
   font-weight: 300;
 }
-.intern-section .content{
+.intern-section .content {
   width: 92%;
 }
 .intern-cards-container {
-margin-top: 7rem;
-z-index: 1;
-margin-left: 1.4rem;
+  margin-top: 7rem;
+  z-index: 1;
+  margin-left: 1.4rem;
 }
-.intern-cards-container::before{
+.intern-cards-container::before {
   display: block;
   content: "";
   background: url(../images/career-page/intern-vector.png) no-repeat center;
-  width: 100%;
-  height: 100%;
+  width: 83rem;
+    height: 25rem;
   position: absolute;
   left: 0;
   top: 0;
@@ -2349,10 +2503,10 @@ margin-left: 1.4rem;
   padding: 4rem 1.6rem 3rem;
   width: 18rem;
 }
-.intern-cards-container .card:nth-child(2n+2){
+.intern-cards-container .card:nth-child(2n + 2) {
   margin-top: 7rem;
 }
-.intern-cards-container .card:nth-child(2n+1){
+.intern-cards-container .card:nth-child(2n + 1) {
   margin-bottom: 7rem;
 }
 .intern-cards-container .card p {
@@ -2360,49 +2514,64 @@ margin-left: 1.4rem;
   line-height: 2rem;
   color: #071a48;
 }
-.intern-section .intern-btn{
-  background-color: #FBB416;
+.intern-section .intern-btn {
+  background-color: #fbb416;
   color: #fff;
   margin-top: 5rem;
   border-radius: 1rem;
   padding: 1.2rem 4.5rem;
   font-size: 1.7rem;
 }
-.current-openings-sec .content .header .text{
- margin-top: .7rem;
+.current-openings-sec .content .header .text {
+  margin-top: 0.7rem;
 }
-.current-openings-sec .card-container{
+.current-openings-sec .card-container {
   margin-left: 2rem;
 }
-.current-openings-sec .card{
+.current-openings-sec .card {
   padding: 2rem;
   margin: 2rem 2rem 0 0;
 }
-.current-openings-sec .card h3{
+.current-openings-sec .card h3 {
   font-size: 1.8rem;
   line-height: 2rem;
 }
-.current-openings-sec .card .header-small-text{
-  font-size: .9rem;
-  margin-bottom: .5rem;
+.current-openings-sec .card .header-small-text {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
 }
-.current-openings-sec .card .text{
+.current-openings-sec .card .text {
   line-height: 1.6rem;
   font-size: 1.1rem;
 }
-.current-openings-sec .card .btm-title{
+.current-openings-sec .card .btm-title {
   font-weight: 800;
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin: 2rem 0 1rem;
 }
-.current-openings-sec .card .btm-btn a{
-  background-color: #00A2D9;
-  padding: .5rem 1rem;
-  margin-right: .2rem;
-  border-radius: .3rem;
+.current-openings-sec .card .btm-btn a {
+  background-color: #00a2d9;
+  padding: 0.5rem 1rem;
+  margin-right: 0.2rem;
+  border-radius: 0.3rem;
   display: inline-block;
   color: #fff;
-  font-size: .8rem;
+  font-size: 0.8rem;
+}
+.career-contact-section .btn-container {
+  margin-right: 5rem;
+}
+.career-contact-section .btn-container .contact-btn {
+  padding: 1.2rem 3.5rem;
+  border-radius: 1rem;
+}
+.career-contact-section .title-box h2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+.career-contact-section .contact-btn img {
+  margin-right: 1rem;
+  width: 1.5rem;
 }
 @media all and (max-width: 767px) {
   .m-w-100 {
@@ -2436,6 +2605,7 @@ margin-left: 1.4rem;
   .com-padding {
     padding: 12rem 0;
   }
+
   .header-small-text {
     margin-bottom: 1.5rem;
     font-size: 2.5rem;
