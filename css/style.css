@@ -2323,9 +2323,13 @@ select:focus {
   color: #fff;
   font-weight: 300;
 }
+.intern-section .content{
+  width: 92%;
+}
 .intern-cards-container {
 margin-top: 7rem;
 z-index: 1;
+margin-left: 1.4rem;
 }
 .intern-cards-container::before{
   display: block;
@@ -2361,10 +2365,45 @@ z-index: 1;
   color: #fff;
   margin-top: 5rem;
   border-radius: 1rem;
-  padding: 1.5rem 5.5rem;
+  padding: 1.2rem 4.5rem;
   font-size: 1.7rem;
 }
-
+.current-openings-sec .content .header .text{
+ margin-top: .7rem;
+}
+.current-openings-sec .card-container{
+  margin-left: 2rem;
+}
+.current-openings-sec .card{
+  padding: 2rem;
+  margin: 2rem 2rem 0 0;
+}
+.current-openings-sec .card h3{
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+.current-openings-sec .card .header-small-text{
+  font-size: .9rem;
+  margin-bottom: .5rem;
+}
+.current-openings-sec .card .text{
+  line-height: 1.6rem;
+  font-size: 1.1rem;
+}
+.current-openings-sec .card .btm-title{
+  font-weight: 800;
+  font-size: .9rem;
+  margin: 2rem 0 1rem;
+}
+.current-openings-sec .card .btm-btn a{
+  background-color: #00A2D9;
+  padding: .5rem 1rem;
+  margin-right: .2rem;
+  border-radius: .3rem;
+  display: inline-block;
+  color: #fff;
+  font-size: .8rem;
+}
 @media all and (max-width: 767px) {
   .m-w-100 {
     width: 100%;
