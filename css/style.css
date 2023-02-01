@@ -242,6 +242,9 @@ a {
 .text-justify {
   text-align: justify;
 }
+.d-none{
+  display: none;
+}
 .bg-white {
   background-color: #fff;
 }
@@ -2233,12 +2236,12 @@ select:focus {
   background: url(../images/career-page/how-can-grow-bg.png) no-repeat center;
   background-size: cover;
 }
-.how-can-grow-sec .info .header-small-text{
+.how-can-grow-sec .info .header-small-text {
   color: #fff;
-} 
-.how-can-grow-sec .info .header{
+}
+.how-can-grow-sec .info .header {
   margin-left: 4rem;
-} 
+}
 .how-can-grow-sec .info {
   color: #fff;
 }
@@ -2256,10 +2259,10 @@ select:focus {
   line-height: 2.2rem;
   font-weight: 300;
 }
-.how-can-grow-sec .content{
+.how-can-grow-sec .content {
   padding: 6rem 0;
 }
-.how-can-grow-sec .how-grow-slider{
+.how-can-grow-sec .how-grow-slider {
   margin-top: 5rem;
 }
 .how-can-grow-sec .slick-slide {
@@ -2313,18 +2316,18 @@ select:focus {
   padding: 2rem 0;
   border-bottom: 1px solid #c5c5c5;
 }
-.ethics-list .list-item h3{
+.ethics-list .list-item h3 {
   letter-spacing: -0.1rem;
 }
-.ethics-list .list-item .right .text{
+.ethics-list .list-item .right .text {
   margin-left: 2rem;
 }
-.get-feel-section .content{
+.get-feel-section .content {
   padding: 8rem 0;
 }
 .get-feel-section .header h2 {
   font-size: 3.3rem;
-  letter-spacing: -.1rem;
+  letter-spacing: -0.1rem;
 }
 .get-feel-section .header .para {
   margin: 1rem auto;
@@ -2416,7 +2419,10 @@ select:focus {
   padding: 3rem 3.3rem;
   border-radius: 1rem;
 }
-.testimonial-section .testimonials .header{
+.career-testimonial-container .testimonial-item  img{
+  width: 4rem;
+}
+.testimonial-section .testimonials .header {
   margin-top: 3rem;
 }
 .meta-data img {
@@ -2442,6 +2448,9 @@ select:focus {
   width: 42%;
   position: relative;
 }
+.testimonial-section .img-container.mobile {
+  display: none;
+}
 .testimonial-section .img-container:before {
   content: "";
   display: block;
@@ -2459,11 +2468,11 @@ select:focus {
   background: url(../images/conditions/ball-ellipse.png) no-repeat center;
   background-size: contain;
   width: 5rem;
-    height: 5rem;
-    position: absolute;
-    bottom: -1rem;
-    left: -7rem;
-    transform: rotate(-74deg);
+  height: 5rem;
+  position: absolute;
+  bottom: -1rem;
+  left: -7rem;
+  transform: rotate(-74deg);
 }
 .testimonial-section .img-container img {
   width: 100%;
@@ -2489,11 +2498,12 @@ select:focus {
   display: block;
   content: "";
   background: url(../images/career-page/intern-vector.png) no-repeat center;
-  width: 83rem;
-    height: 25rem;
+  background-size: contain;
+  width: 100%;
+  height: 81%;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 1.5rem;
   z-index: -1;
 }
 .intern-cards-container .card {
@@ -2577,8 +2587,23 @@ select:focus {
   .m-w-100 {
     width: 100%;
   }
+  .m-flex-col {
+    flex-direction: column;
+  }
+  .m-flex-box{
+    display: flex;
+  }
+  .m-none{
+    display: none;
+  }
+  .m-block{
+    display: block;
+  }
+  .m-text-center{
+    text-align: center;
+  }
   h1 {
-    font-size: 12rem;
+    font-size: 11.5rem;
     line-height: 14.3rem;
   }
   h2 {
@@ -2602,10 +2627,10 @@ select:focus {
     line-height: 6.5rem;
     margin: 4.2rem 0;
   }
-  .com-padding {
+  .com-padding,
+  .sm-com-padding {
     padding: 12rem 0;
   }
-
   .header-small-text {
     margin-bottom: 1.5rem;
     font-size: 2.5rem;
@@ -3086,6 +3111,13 @@ select:focus {
   }
   .health-issues-section .appointment-btn {
     display: none;
+  }
+  .health-issues-section .appointment-btn.mobile {
+    display:block;
+    margin-bottom: 12rem;
+    padding: 4.5rem 8rem;
+    font-size: 3.5rem;
+    border-radius: 0 3rem 3rem 3rem;
   }
   .health-issues-section .header {
     text-align: center;
@@ -3684,7 +3716,14 @@ select:focus {
     margin-right: 3rem;
   }
   .ap-get-assessed .top-sec .btn-container {
-    display: none;
+    display: flex;
+    justify-content: center;
+  }
+  .ap-get-assessed .top-sec .btn-container .appoint-btn{
+    padding: 3rem 7rem;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+    margin: 4rem 0;
   }
   .ap-get-assessed .top-sec .title-box {
     text-align: center;
@@ -3741,5 +3780,303 @@ select:focus {
   .ap-know-more-cards .slick-next,
   .ap-know-more-cards .slick-prev {
     top: -9rem;
+  }
+  /*=========== career page ===========*/
+  .career-banner .career-banner-title br {
+    display: none;
+  }
+  .career-banner .career-banner-title {
+    line-height: 14rem;
+  }
+  .career-banner {
+    background-position: 100% 0;
+  }
+  .be-well-sec .section-para {
+    margin-bottom: 6rem;
+  }
+  .be-well-sec .arc-card-img img {
+    width: 9rem;
+    height: 10rem;
+  }
+  .be-well-sec .arc-card-container .arc-card-title {
+    text-align: left;
+  }
+  .be-well-sec .arc-card:last-child .arc-card-para {
+    width: 100%;
+  }
+  .how-can-grow-sec .content {
+    padding-top: 11rem;
+    padding-bottom: 0;
+  }
+  .how-can-grow-sec .how-grow-slide p {
+    bottom: 22rem;
+    left: 11rem;
+    font-size: 5rem;
+    line-height: 6.5rem;
+  }
+  .how-can-grow-sec .info img {
+    width: 100rem;
+  }
+
+  .how-can-grow-sec .how-grow-slider {
+    margin-left: -7rem;
+  }
+  .how-grow-slider .slick-next,
+  .how-grow-slider .slick-prev {
+    top: -40rem;
+  }
+  .how-grow-slider .slick-prev {
+    left: 7.5rem;
+  }
+  .how-grow-slider .slick-next {
+    left: 16.5rem;
+  }
+  .how-grow-slider .slick-prev:before,
+  .how-grow-slider .slick-next:before {
+    width: 7rem;
+    height: 7rem;
+  }
+  .how-can-grow-sec .how-grow-slider {
+    margin-top: 10rem;
+  }
+  .how-can-grow-sec .how-grow-slider .slick-slide {
+    margin-right: 8rem;
+  }
+  .strong-ethics-sec .header {
+    margin-bottom: 9rem;
+  }
+  .ethics-list img {
+    margin-right: 6rem;
+    width: 13rem;
+  }
+  .ethics-list .left {
+    margin-top: 4rem;
+  }
+  .get-feel-section .header h2 {
+    font-size: 7rem;
+    width: 50%;
+    margin: 0 auto;
+    
+  }
+  .get-feel-section .content {
+    padding: 11rem 0;
+  }
+  .get-feel-section .header .para {
+    line-height: 5.8rem;
+    width:78%;
+  }
+  .get-feel-section .gallery.mobile {
+    margin-top: 11rem;
+    margin-left: 1.5rem;
+}
+  .get-feel-section .gallery.mobile li {
+    margin-right: 5rem;
+    margin-bottom: 4rem;
+  }
+  .get-feel-section .gallery li:nth-child(1) {
+    width: 52rem;
+    margin-top: 0;
+    position: relative;
+  }
+  .get-feel-section .gallery li:nth-child(1):before {
+    content: "";
+    display: block;
+    background: url(../images/career-page/get-feel-top.png) no-repeat center;
+    background-size: contain;
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    top: -3.5rem;
+    left: 47rem;
+}
+  
+  .get-feel-section .gallery li:nth-child(2) {
+    width: 35rem;
+    margin-right: 0;
+  }
+  .get-feel-section .gallery li:nth-child(3) {
+    width: 41rem;
+  }
+  .get-feel-section .gallery li:nth-child(3):before {
+    display: none;
+}
+  .get-feel-section .gallery li:nth-child(4) {
+    margin-top: 0;
+    width: 46rem;
+    margin-right: 0;
+    position: relative;
+}
+.get-feel-section .gallery li:nth-child(4):before {
+  content: "";
+  display: block;
+  background: url(../images/career-page/get-feel-left.png) no-repeat center;
+  background-size: contain;
+  width: 19rem;
+  height: 12rem;
+  position: absolute;
+  bottom: 25rem;
+  left: -6.5rem;
+  transform: scaleY(-1) rotate(183deg);
+}
+  
+  .get-feel-section .gallery li:nth-child(5) {
+    margin-left: 0;
+    width: 41rem;
+  }
+  .get-feel-section .gallery li:nth-child(6) {
+    width: 46rem;
+    margin-top: -29rem;
+    margin-right: 0;
+  }
+  .get-feel-section .gallery li:nth-child(7) {
+    width: 41rem;
+    margin-top: 0;
+    position: relative;
+  }
+  .get-feel-section .gallery li:nth-child(7):after {
+    content: "";
+    display: block;
+    background: url(../images/career-page/get-feel-btm.png) no-repeat center;
+    background-size: contain;
+    width: 7rem;
+    height: 6rem;
+    position: absolute;
+    bottom: 12rem;
+    right: -0.8rem;
+  }
+  .get-feel-section .gallery li:nth-child(8) {
+    width: 47rem;
+    margin-top: -23rem;
+    margin-right: 0;
+  }
+  .testimonial-section .img-container:before,
+  .testimonial-section .img-container:after {
+    display: none;
+  }
+  .testimonial-section .img-container.mobile {
+    display: block;
+    width: 100%;
+    height: 100rem;
+    margin: 9rem 0 5rem;
+  }
+  .testimonial-section .img-container.mobile img {
+    height: 100%;
+  }
+  .testimonial-section .img-container.desktop {
+    display: none;
+  }
+  .testimonial-section .testimonials .header {
+    margin-top: 0;
+  }
+  .career-testimonial-container .slick-prev:before,
+  .career-testimonial-container .slick-next:before {
+    width: 7rem;
+    height: 7rem;
+  }
+  .career-testimonial-container .slick-next,
+  .slick-prev {
+    top: 50%;
+  }
+  .career-testimonial-container .slick-next {
+    right: -2rem;
+  }
+  .career-testimonial-container .testimonial-item {
+    padding: 6rem;
+  }
+  .career-testimonial-container .slick-slide {
+    margin: 0 3rem;
+  }
+  .career-testimonial-container .slick-slide img {
+    width: 10rem;
+    margin-right: 3rem;
+  }
+  .career-testimonial-container .meta-data small {
+    font-size: 2rem;
+  }
+  .intern-cards-container{
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 11rem;
+  }
+  .intern-section .content{
+    width: 100%;
+  }
+  .intern-cards-container::before {
+    background-image: url(../images/career-page/m-intern-vector.png);
+    width: 207%;
+    height: 114%;
+    left: -51rem;
+    top: -17rem;
+   
+  }
+  .intern-cards-container .card {
+    width: 47.5%;
+    padding: 6rem;
+  }
+  .intern-cards-container .card:last-child{
+    transform: translateX(53%);
+  }
+  
+  .intern-cards-container .card img {
+    width: 18rem;
+    height: 19rem;
+    object-fit: scale-down;
+  }
+  .intern-cards-container .card p {
+    font-size: 4.5rem;
+    line-height: 5rem;
+    margin-top: 8rem;
+  }
+
+  .intern-cards-container .card:nth-child(2n + 2),
+  .intern-cards-container .card:nth-child(2n + 1) {
+    margin: 2rem 0 2.5rem;
+  }
+  .intern-section .intern-btn {
+    border-radius: 1rem;
+    padding: 2rem 5rem;
+    font-size: 2.4rem;
+  }
+  .current-openings-sec .card-container {
+    grid-template-columns: 1fr;
+  }
+  .current-openings-sec .card-container .card {
+    margin-bottom: 3rem;
+    padding: 5rem;
+  }
+  .current-openings-sec .card .header-small-text {
+    font-size: 2rem;
+  }
+  .current-openings-sec .card h3 {
+    font-size: 4.8rem;
+    line-height: 6rem;
+  }
+  .current-openings-sec .card .text {
+    line-height: 5rem;
+    font-size: 3.3rem;
+  }
+  .current-openings-sec .card .btm-title {
+    font-size: 2.5rem;
+    margin: 3rem 0;
+  }
+  .current-openings-sec .card .btm-btn a {
+    padding: 1.5rem 3rem;
+    margin-right: 1.2rem;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+  }
+  .career-contact-section .title-box h2 {
+    font-size: 5.5rem;
+    line-height: 6rem;
+    margin-bottom: 3rem;
+  }
+  .career-contact-section .btn-container {
+    display: flex;
+    justify-content: center;
+  }
+  .career-contact-section .contact-btn img {
+    margin-right: 3rem;
+    width: 4.5rem;
   }
 }
