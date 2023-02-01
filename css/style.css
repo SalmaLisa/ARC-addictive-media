@@ -616,12 +616,6 @@ form .submit-btn:hover {
   background-color: #913f9a;
 }
 /* feeds page FAQ section */
-.fp-FAQ-section {
-  background-color: #eefaff;
-}
-.fp-FAQ-section .section-header {
-  margin-bottom: 4rem;
-}
 .fp-FAQ-section .question {
   font-size: 2rem;
   font-weight: 600;
@@ -2586,6 +2580,58 @@ select:focus {
   margin-right: 1rem;
   width: 1.5rem;
 }
+/*======== Fee and insurance page ===========*/
+.insurance-banner{
+  background: url(../images/insurance/insu-top-banner.png) no-repeat center;
+  background-size: cover;
+}
+.insurance-banner .com-padding{
+  padding-bottom: 7rem;
+}
+.insu-know-more{
+  background: url(../images/insurance/insu-btm-banner.png) no-repeat center;
+  background-size: cover;
+  padding: 14rem 0;
+}
+.insu-know-more .info-box .text{
+  margin:0 0 .5rem;
+}
+.insu-know-more .info-box h2{
+  margin-bottom: 1rem;
+}
+.insu-FAQ-sec .com-padding{
+  padding-top: 9rem;
+}
+.insu-FAQ-sec .question{
+  padding: 1.5rem 0;
+  border-bottom: .8px solid #c9c8c8;
+}
+.insu-FAQ-sec .question h4{
+  font-size: 1.6rem;
+}
+.insu-FAQ-sec .body-top{
+  padding-top: 1.5rem;
+}
+.insu-FAQ-sec .body-top p{
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height:2rem;
+  color: #954C9D;
+}
+.insu-FAQ-sec .questions-container li:first-child .question{
+border-top: .8px solid #c9c8c8;
+margin-top: 3.5rem;
+}
+.insu-FAQ-sec .insu-accordion-body{
+ display: none;
+ border-bottom: 1px solid #c9c8c8;
+ padding-bottom: 1rem;
+}
+.insu-FAQ-sec .insu-accordion-body .text{
+  letter-spacing: -0.06rem;
+}
+
+
 @media all and (max-width: 767px) {
   .m-w-100 {
     width: 100%;
@@ -2857,7 +2903,7 @@ select:focus {
     margin-bottom: 0.8rem;
     border: none;
   }
-  .accordion-body {
+  .accordion-body{
     padding: 0 1.2rem;
     display: none;
     overflow: hidden;

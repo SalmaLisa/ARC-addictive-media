@@ -134,3 +134,23 @@ $(".career-testimonial-container").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
 });
+
+// Fee and Insurance page
+var acc = document.getElementsByClassName("insu-accordion-header");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the accordionBody */
+      this.classList.toggle("current");
+
+      /* Toggle between hiding and showing the active accordionBody */
+      var accordionBody = this.nextElementSibling;
+      if (accordionBody.style.display === "block") {
+        accordionBody.style.display = "none";
+      } else {
+        accordionBody.style.display = "block";
+      }
+    });
+  }
