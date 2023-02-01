@@ -699,7 +699,7 @@ footer li {
   line-height: 1.9rem;
 }
 .footer-block {
-  padding: 0 50px;
+  padding: 0 3rem;
 }
 .footer-block:first-child {
   padding-left: 0;
@@ -2518,6 +2518,9 @@ select:focus {
 }
 .intern-cards-container .card:nth-child(2n + 1) {
   margin-bottom: 7rem;
+}
+.intern-cards-container .card img{
+  width: 5rem;
 }
 .intern-cards-container .card p {
   font-size: 1.7rem;
