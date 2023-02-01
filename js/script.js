@@ -153,4 +153,22 @@ var acc = document.getElementsByClassName("insu-accordion-header");
         accordionBody.style.display = "block";
       }
     });
-  }
+}
+$(".fee-cards-container").slick({
+  dots: false,
+  infinite: true,
+  autoplay: false,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint:768,
+      settings: {
+        centerMode:true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});

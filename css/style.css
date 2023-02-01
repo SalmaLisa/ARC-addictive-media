@@ -242,11 +242,17 @@ a {
 .text-justify {
   text-align: justify;
 }
-.d-none{
+.d-none {
   display: none;
 }
 .bg-white {
   background-color: #fff;
+}
+.flipX {
+  transform: scaleX(-1);
+}
+.text-white{
+  color: #ffffff;
 }
 body {
   font-family: "Nunito", sans-serif;
@@ -2413,7 +2419,7 @@ select:focus {
   padding: 3rem 3.3rem;
   border-radius: 1rem;
 }
-.career-testimonial-container .testimonial-item  img{
+.career-testimonial-container .testimonial-item img {
   width: 4rem;
 }
 .testimonial-section .testimonials .header {
@@ -2513,7 +2519,7 @@ select:focus {
 .intern-cards-container .card:nth-child(2n + 1) {
   margin-bottom: 7rem;
 }
-.intern-cards-container .card img{
+.intern-cards-container .card img {
   width: 5rem;
 }
 .intern-cards-container .card p {
@@ -2581,56 +2587,279 @@ select:focus {
   width: 1.5rem;
 }
 /*======== Fee and insurance page ===========*/
-.insurance-banner{
+.insurance-banner {
   background: url(../images/insurance/insu-top-banner.png) no-repeat center;
   background-size: cover;
 }
-.insurance-banner .com-padding{
+.insurance-banner .com-padding {
   padding-bottom: 7rem;
 }
-.insu-know-more{
+.strong-motive h4 {
+  font-weight: 800;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.05rem;
+}
+.strong-motive .info .text {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.2rem;
+}
+.strong-motive .img-container {
+  width: 18rem;
+}
+.strong-motive img {
+  width: 100%;
+}
+.strong-motive .info {
+  margin-left: -0.6rem;
+}
+.strong-motive .top .vector-container {
+  margin-left: 4.5rem;
+  margin-top: -2rem;
+}
+.strong-motive .bottom .vector-container {
+  margin-left: 4.5rem;
+}
+.strong-motive .left,
+.strong-motive .right {
+  width: 37%;
+}
+.strong-motive .middle {
+  width: 22%;
+  position: relative;
+}
+.strong-motive .middle:before,
+.strong-motive .middle:after {
+  content: "";
+  width: 1px;
+  height: 6.5rem;
+  position: absolute;
+  background: #000;
+  left: 50%;
+}
+.strong-motive .middle:before {
+  top: -38%;
+}
+.strong-motive .middle:after {
+  bottom: -33%;
+  height: 5.5rem;
+}
+.insu-page-btn button{
+  padding: .9rem 3rem;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.medium-sec{
+  background: url(../images/insurance/mediums-bg.png) no-repeat center;
+  background-size: cover;
+}
+.medium-sec .content:before{
+  content: "";
+  display: block;
+  background-image: url(../images/career-page/get-feel-left.png) ;
+  background-size: cover;
+  position: absolute;
+  width: 10%;
+    height: 11%;
+    bottom: 5rem;
+    left: -7rem;
+}
+.medium-sec .content:after{
+  content: "";
+  display: block;
+  background-image: url(../images/career-page/get-feel-top.png) ;
+  background-size: cover;
+  position: absolute;
+    width: 6.5%;
+    height: 13%;
+    top: 5rem;
+    right: -7rem;
+}
+.medium-sec .info .header-small-text{
+  color: #fff;
+}
+.medium-sec .cards-container{
+  width: 68%;
+}
+.medium-sec .card-item{
+  padding: 2.5rem 1.2rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+.medium-sec .card-item:last-child{
+  margin-right: 0;
+}
+.medium-sec .card-item img:first-child{
+  width: 4rem;
+  height: 3rem;
+  object-fit: scale-down;
+}
+.medium-sec .card-item img:last-child{
+  width: 2rem;
+}
+.medium-sec .card-item h5{
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  color: #071A48;
+}
+.medium-sec .card-item .text{
+  font-size: .8rem;
+    line-height: 1rem;
+  margin: .6rem 0 2.2rem;
+  letter-spacing: -0.04rem;
+  color: #7C7C7C;
+}
+.offer-section .header .text{
+  margin: 1rem auto;
+}
+.offer-list-container img{
+  width: 26rem;
+}
+.offer-list-container .info p{
+  margin-top: .5rem;
+}
+.offer-list-container .info h4{
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.offer-list-container .list-item {
+  border-bottom: 1px solid #E7E7E7;
+}
+.offer-list-container .list-item:last-child{
+  border: none;
+}
+.offer-section .insu-page-btn button{
+  padding: 1.4rem 5rem;
+  font-size: 1.5rem;
+  border-radius: 1.3rem;
+}
+.fee-plan-sec .info:after{
+  content: "";
+  display: block;
+  background: url(../images/conditions/vio-ellipse.png) no-repeat center ;
+  background-size: contain;
+  position: absolute;
+  width: 12%;
+  height: 11%;
+  bottom: 0rem;
+  right: -1rem;
+  transform: rotate(180deg);
+}
+.fee-cards-container .slick-slide {
+  margin-right: 3.2rem;
+}
+.fee-cards-container .slick-prev:before,
+.fee-cards-container .slick-next:before {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: block;
+  opacity: 1;
+}
+.fee-cards-container .slick-prev:before {
+  background: url(../images/career-page/how-can-prev.png) no-repeat center !important;
+  background-size: cover !important;
+}
+.fee-cards-container .slick-next:before {
+  background: url(../images/conditions/slide-next.png) no-repeat center !important ;
+  background-size: cover !important;
+}
+.fee-cards-container .slick-next {
+  left: -28rem;
+  right: auto;
+}
+.fee-cards-container .slick-prev {
+  left: -32rem;
+  right: auto;
+}
+.fee-cards-container .slick-next,
+.fee-cards-container .slick-prev {
+  top: 21.5rem;
+}
+.fee-cards-container .fee-card .top{
+  padding: 2.2rem 2.2rem 5rem;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+}
+.fee-card .top .header-small-text{
+  color: #ffffff;
+}
+.fee-card .top h3 span:first-child{
+  font-weight: 800;
+}
+.fee-card .plans{
+  padding:1rem 2.2rem 2.2rem 2.2rem;
+  list-style: disc;
+}
+.fee-card .plans li{
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+  font-weight: 300;
+  margin-left: 1.5rem;
+  color: #696969;
+  border-bottom: 1px solid #D9D9D9;
+  letter-spacing: -0.04rem;
+}
+.blue-bg{
+background-color: #3DC3F2;
+}
+.yellow-bg{
+background-color:#FBB416;
+}
+.fee-card .plans li:last-child{
+  border-bottom: none;
+  padding-bottom: 3rem;
+}
+.insu-know-more {
   background: url(../images/insurance/insu-btm-banner.png) no-repeat center;
   background-size: cover;
   padding: 14rem 0;
 }
-.insu-know-more .info-box .text{
-  margin:0 0 .5rem;
+.insu-know-more .info-box .text {
+  margin: 0 0 0.5rem;
 }
-.insu-know-more .info-box h2{
+.insu-know-more .info-box h2 {
   margin-bottom: 1rem;
 }
-.insu-FAQ-sec .com-padding{
+.insu-FAQ-sec .com-padding {
   padding-top: 9rem;
 }
-.insu-FAQ-sec .question{
+.insu-FAQ-sec .question {
   padding: 1.5rem 0;
-  border-bottom: .8px solid #c9c8c8;
+  border-bottom: 0.8px solid #c9c8c8;
 }
-.insu-FAQ-sec .question h4{
+.insu-FAQ-sec .question h4 {
   font-size: 1.6rem;
 }
-.insu-FAQ-sec .body-top{
+.insu-FAQ-sec .body-top {
   padding-top: 1.5rem;
 }
-.insu-FAQ-sec .body-top p{
+.insu-FAQ-sec .body-top p {
   font-weight: 600;
   font-size: 1.5rem;
-  line-height:2rem;
-  color: #954C9D;
+  line-height: 2rem;
+  color: #954c9d;
 }
-.insu-FAQ-sec .questions-container li:first-child .question{
-border-top: .8px solid #c9c8c8;
-margin-top: 3.5rem;
+.insu-FAQ-sec .questions-container li:first-child .question {
+  border-top: 0.8px solid #c9c8c8;
+  margin-top: 3.5rem;
 }
-.insu-FAQ-sec .insu-accordion-body{
- display: none;
- border-bottom: 1px solid #c9c8c8;
- padding-bottom: 1rem;
+.insu-FAQ-sec .insu-accordion-body {
+  display: none;
+  border-bottom: 1px solid #c9c8c8;
+  padding-bottom: 1rem;
 }
-.insu-FAQ-sec .insu-accordion-body .text{
+.questions-container li:first-child .insu-accordion-body{
+  display: block;
+}
+.insu-FAQ-sec .insu-accordion-body .text {
   letter-spacing: -0.06rem;
 }
-
 
 @media all and (max-width: 767px) {
   .m-w-100 {
@@ -2639,16 +2868,16 @@ margin-top: 3.5rem;
   .m-flex-col {
     flex-direction: column;
   }
-  .m-flex-box{
+  .m-flex-box {
     display: flex;
   }
-  .m-none{
+  .m-none {
     display: none;
   }
-  .m-block{
+  .m-block {
     display: block;
   }
-  .m-text-center{
+  .m-text-center {
     text-align: center;
   }
   h1 {
@@ -2903,7 +3132,7 @@ margin-top: 3.5rem;
     margin-bottom: 0.8rem;
     border: none;
   }
-  .accordion-body{
+  .accordion-body {
     padding: 0 1.2rem;
     display: none;
     overflow: hidden;
@@ -3162,7 +3391,7 @@ margin-top: 3.5rem;
     display: none;
   }
   .health-issues-section .appointment-btn.mobile {
-    display:block;
+    display: block;
     margin-bottom: 12rem;
     padding: 4.5rem 8rem;
     font-size: 3.5rem;
@@ -3768,7 +3997,7 @@ margin-top: 3.5rem;
     display: flex;
     justify-content: center;
   }
-  .ap-get-assessed .top-sec .btn-container .appoint-btn{
+  .ap-get-assessed .top-sec .btn-container .appoint-btn {
     padding: 3rem 7rem;
     border-radius: 1rem;
     font-size: 2.5rem;
@@ -3905,19 +4134,18 @@ margin-top: 3.5rem;
     font-size: 7rem;
     width: 50%;
     margin: 0 auto;
-    
   }
   .get-feel-section .content {
     padding: 11rem 0;
   }
   .get-feel-section .header .para {
     line-height: 5.8rem;
-    width:78%;
+    width: 78%;
   }
   .get-feel-section .gallery.mobile {
     margin-top: 11rem;
     margin-left: 1.5rem;
-}
+  }
   .get-feel-section .gallery.mobile li {
     margin-right: 5rem;
     margin-bottom: 4rem;
@@ -3937,8 +4165,8 @@ margin-top: 3.5rem;
     position: absolute;
     top: -3.5rem;
     left: 47rem;
-}
-  
+  }
+
   .get-feel-section .gallery li:nth-child(2) {
     width: 35rem;
     margin-right: 0;
@@ -3948,26 +4176,26 @@ margin-top: 3.5rem;
   }
   .get-feel-section .gallery li:nth-child(3):before {
     display: none;
-}
+  }
   .get-feel-section .gallery li:nth-child(4) {
     margin-top: 0;
     width: 46rem;
     margin-right: 0;
     position: relative;
-}
-.get-feel-section .gallery li:nth-child(4):before {
-  content: "";
-  display: block;
-  background: url(../images/career-page/get-feel-left.png) no-repeat center;
-  background-size: contain;
-  width: 19rem;
-  height: 12rem;
-  position: absolute;
-  bottom: 25rem;
-  left: -6.5rem;
-  transform: scaleY(-1) rotate(183deg);
-}
-  
+  }
+  .get-feel-section .gallery li:nth-child(4):before {
+    content: "";
+    display: block;
+    background: url(../images/career-page/get-feel-left.png) no-repeat center;
+    background-size: contain;
+    width: 19rem;
+    height: 12rem;
+    position: absolute;
+    bottom: 25rem;
+    left: -6.5rem;
+    transform: scaleY(-1) rotate(183deg);
+  }
+
   .get-feel-section .gallery li:nth-child(5) {
     margin-left: 0;
     width: 41rem;
@@ -4042,13 +4270,13 @@ margin-top: 3.5rem;
   .career-testimonial-container .meta-data small {
     font-size: 2rem;
   }
-  .intern-cards-container{
+  .intern-cards-container {
     margin-left: 0;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 11rem;
   }
-  .intern-section .content{
+  .intern-section .content {
     width: 100%;
   }
   .intern-cards-container::before {
@@ -4057,16 +4285,15 @@ margin-top: 3.5rem;
     height: 114%;
     left: -51rem;
     top: -17rem;
-   
   }
   .intern-cards-container .card {
     width: 47.5%;
     padding: 6rem;
   }
-  .intern-cards-container .card:last-child{
+  .intern-cards-container .card:last-child {
     transform: translateX(53%);
   }
-  
+
   .intern-cards-container .card img {
     width: 18rem;
     height: 19rem;
