@@ -1722,7 +1722,7 @@ body .need-help-section {
 }
 .pc-assess-resource-sec .info-box .know-more-btn {
   padding: 1.4rem 5rem;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.3rem;
   line-height: 1.7rem;
   color: #fff;
@@ -3153,7 +3153,7 @@ background-color:#FBB416;
     float: right;
     margin-left: 5px;
   }
-  .current:after {
+   footer .current:after {
     content: "\2796";
   }
   footer .desktop-view {
@@ -3955,7 +3955,7 @@ background-color:#FBB416;
   }
   .pc-assess-resource-sec .info-box .know-more-btn {
     padding: 3.4rem 10rem;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 4rem;
     border-radius: 2.3rem;
   }
@@ -4364,4 +4364,116 @@ background-color:#FBB416;
     margin-right: 3rem;
     width: 4.5rem;
   }
+  /*======= Fee and insurance page ========*/
+  .insurance-banner {
+    background-position: 45% 20%;
+}
+.insu-banner-title{
+  font-size: 11rem;
+}
+.strong-motive .header h2 br,.medium-sec .info h2 br{
+display: none;
+}
+.medium-sec{
+  padding: 0;
+}
+.medium-sec .info{
+  text-align: center;
+}
+.medium-sec .info .text{
+  margin-top: 2rem;
+}
+.medium-sec .content:after,.medium-sec .content:before{
+  display: none;
+}
+.medium-sec .cards-container {
+  width: 100%;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+.medium-sec .card-item{
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 4rem;
+  text-align: center;
+  padding:7rem;
+  border-radius: 2rem;
+}
+.medium-sec .card-item img:first-child {
+  width: 15rem;
+  height: 12rem;
+  margin-bottom: 5rem;
+  object-fit: fill;
+}
+.medium-sec .card-item h5 {
+  font-size: 5rem;
+  line-height: 6rem;
+}
+.medium-sec .card-item .text {
+  font-size: 4rem;
+  line-height: 5rem;
+  width: 70%;
+  margin:2rem auto;
+}
+.medium-sec .card-item img:last-child {
+  width: 7rem;
+  margin-top: 3rem;
+}
+.offer-list-container img {
+  width: 70rem;
+  margin-left: -10rem;
+}
+.offer-list-container .list-item {
+  align-items: stretch;
+}
+.offer-list-container .list-item .info h4{
+  margin-bottom: 2rem;
+}
+.offer-list-container .list-item .info .text{
+  margin-bottom: 7.2rem;
+}
+.offer-section .insu-page-btn button {
+  padding: 3rem 11rem;
+  font-size: 3rem;
+}
+.fee-plan-sec .info {
+  width: 100%;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.fee-card .plans li {
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  padding: 3rem 0;
+  margin-left: 3rem;
+}
+.fee-cards-container .fee-card .top {
+  padding: 8.2rem 6.2rem 10rem;
+}
+.fee-card .plans {
+  padding: 3rem 6rem 9rem;
+}
+.fee-cards-container .slick-slide {
+  margin-right: 6rem;
+}
+.fee-plan-sec .info:after{
+  display: none;
+}
+.insu-know-more {
+  padding: 22rem 0;
+  background-position: 29% 0;
+}
+.insu-FAQ-sec .question h4 {
+  font-size: 4.5rem;
+}
+.insu-FAQ-sec .body-top p {
+  font-size: 4rem;
+  line-height: 5rem;
+}
+.insu-FAQ-sec .body-top {
+  padding-top: 4rem;
+}
+.insu-FAQ-sec .question {
+  padding: 5rem 0;
+}
 }
