@@ -2737,6 +2737,12 @@ select:focus {
   font-size: 1.5rem;
   border-radius: 1.3rem;
 }
+.fee-plan-sec .info{
+  width: 36%;
+}
+.fee-plan-sec .info .header-small-text{
+  margin: 1rem 0;
+}
 .fee-plan-sec .info:after{
   content: "";
   display: block;
@@ -2750,7 +2756,7 @@ select:focus {
   transform: rotate(180deg);
 }
 .fee-cards-container .slick-slide {
-  margin-right: 3.2rem;
+  margin-right: 3.1rem;
 }
 .fee-cards-container .slick-prev:before,
 .fee-cards-container .slick-next:before {
@@ -2779,14 +2785,17 @@ select:focus {
 }
 .fee-cards-container .slick-next,
 .fee-cards-container .slick-prev {
-  top: 21.5rem;
+  top: 19rem;
 }
 .fee-cards-container .fee-card .top{
-  padding: 2.2rem 2.2rem 5rem;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  padding: 2.2rem 2.2rem 4rem;
+  clip-path: polygon(0 0, 100% 0, 100% 69%, 0 100%);
 }
 .fee-card .top .header-small-text{
   color: #ffffff;
+}
+.fee-card .top h3{
+  margin-top: .5rem;
 }
 .fee-card .top h3 span:first-child{
   font-weight: 800;
@@ -2796,7 +2805,7 @@ select:focus {
   list-style: disc;
 }
 .fee-card .plans li{
-  font-size: 1.3rem;
+  font-size: 1.24rem;
   line-height: 1.5rem;
   padding: 1rem 0;
   font-weight: 300;
