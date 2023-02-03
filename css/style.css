@@ -670,6 +670,7 @@ form .submit-btn:hover {
   display: inline-block;
   font-size: 1.2rem;
 }
+
 /* footer */
 footer {
   background-color: #171c26;
@@ -3172,10 +3173,11 @@ width: 26.5%;
   }
 
   form .submit-btn {
-    padding: 2rem 7rem;
+    padding: 3rem 12rem;
     margin-top: 5px;
-    font-size: 2rem;
-  }
+    font-size: 3.5rem;
+    border-radius: 2rem;
+}
   .fp-FAQ-section .section-header {
     text-align: center;
     margin-bottom: 9rem;
@@ -3223,6 +3225,35 @@ width: 26.5%;
   .fp-blog-section .section-header {
     margin-bottom: 3rem;
   }
+  .fp-blog-section .slick-prev:before,
+  .fp-blog-section .slick-next:before {
+  content: "";
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  display: block;
+}
+.fp-blog-section .slick-prev:before {
+  background: url(../images/conditions/slide-prev.png) no-repeat center !important;
+  background-size: cover;
+}
+
+.fp-blog-section .slick-next:before {
+  background: url(../images/conditions/slide-next.png) no-repeat center !important ;
+  background-size: cover;
+}
+.fp-blog-section .slick-next {
+  right: 7%;
+  left: auto;
+}
+.fp-blog-section .slick-prev {
+  right: 16rem;
+  left: auto;
+}
+.fp-blog-section .slick-next,
+.fp-blog-section .slick-prev {
+  top: -15rem;
+}
   footer .footer-block {
     border: none;
   }
