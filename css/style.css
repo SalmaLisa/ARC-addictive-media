@@ -1659,7 +1659,8 @@ body .need-help-section {
 }
 .pc-get-assessed-sec .slick-prev:before,
 .pc-get-assessed-sec .slick-next:before,.about-experts .slick-prev:before,
-.about-experts .slick-next:before {
+.about-experts .slick-next:before,.testimonial-container .slick-prev:before,
+.testimonial-container .slick-next:before {
   content: "";
   width: 4rem;
   height: 4rem;
@@ -1671,8 +1672,7 @@ body .need-help-section {
   background: url(../images/conditions/slide-prev.png) no-repeat center !important;
   background-size: contain;
 }
-
-.pc-get-assessed-sec .slick-next:before,.about-experts .slick-next:before {
+.pc-get-assessed-sec .slick-next:before,.about-experts .slick-next:before,.testimonial-container .slick-next:before {
   background: url(../images/conditions/slide-next.png) no-repeat center !important ;
   background-size: contain;
 }
@@ -3217,6 +3217,39 @@ z-index: 0;
 .experts-section .about-experts .slick-slide{
   margin-right: 2.5rem;
 }
+.personalized-section{
+  background: url(../images/about/personalized-bg.png);
+}
+.personalized-section .content{
+  padding: 6rem 0;
+}
+.personalized-section .title-box {
+  width: 41%;
+}
+.personalized-section .title-box h2 {
+  font-size: 3.4rem;
+  letter-spacing: -.1rem;
+}
+.personalized-section .title-box .text{
+  letter-spacing: -.04rem;
+}
+.personalized-section .service-cards .card{
+padding: 3.5rem 2.7rem 3rem;
+border-radius: .6rem;
+margin-right: 3rem;
+}
+.personalized-section .service-cards .card img:first-child{
+  width: 5.5rem;
+  height: 6.2rem;
+}
+.personalized-section .service-cards .card img:last-child{
+  width: 3rem;
+}
+.personalized-section .service-cards .card p{
+  font-size: 1.9rem;
+  line-height: 2.3rem;
+  margin: 2rem 0;
+}
 .about-experts .slick-prev:before {
   background: url(../images/career-page/how-can-prev.png) no-repeat center !important;
   background-size: contain;
@@ -3231,6 +3264,9 @@ opacity: 1;
 .about-experts .slick-prev{
   right: 19%;
 }
+.about-testimonial .img-container{
+width: 44%;
+}
 .about-testimonial .img-container img {
   width: 100%;
   border-radius: 0 0 0 5rem;
@@ -3242,10 +3278,11 @@ opacity: 1;
   top: -8rem;
   left: -3rem;
 }
-.about-testimonial .header .text {
+.about-testimonial .testimonial-item  .text {
   font-size: 1.7rem;
   font-weight: 300;
   line-height: 2.3rem;
+  letter-spacing: -.04rem;
 }
 .about-testimonial .meta-data {
   border-bottom: 1px solid #d9d9d9;
@@ -3264,6 +3301,19 @@ opacity: 1;
   position: absolute;
   bottom: -1%;
   left: -13rem;
+}
+.testimonial-container .slick-prev:before{
+  background: url(../images/about/pink-slide-prev.png) no-repeat center !important;
+  background-size: contain;
+}
+.testimonial-container .slick-next,.testimonial-container .slick-prev{
+  top: 111%;
+}
+.testimonial-container .slick-next {
+  right: 85%;
+}
+.testimonial-container .slick-prev{
+  left: 0;
 }
 @media all and (max-width: 767px) {
   .m-w-100 {
