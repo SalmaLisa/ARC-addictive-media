@@ -272,9 +272,6 @@ body {
 .extra-padding {
   padding: 2rem;
 }
-section {
-  overflow: hidden;
-}
 @media all and (min-width: 1920px) {
   html {
     font-size: 16px;
@@ -431,7 +428,7 @@ p {
 .fp-details-section .content .sticky-part {
   width: 28%;
   position: sticky;
-  top: 12rem;
+  top: 4rem;
   height: 42rem;
 }
 .fp-details-section .agenda-container {
