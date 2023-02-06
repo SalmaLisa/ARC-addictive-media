@@ -1658,32 +1658,35 @@ body .need-help-section {
   width: 2.8rem;
 }
 .pc-get-assessed-sec .slick-prev:before,
-.pc-get-assessed-sec .slick-next:before {
+.pc-get-assessed-sec .slick-next:before,.about-experts .slick-prev:before,
+.about-experts .slick-next:before {
   content: "";
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
   display: block;
+
 }
-.pc-get-assessed-sec .slick-prev:before {
+.pc-get-assessed-sec .slick-prev:before{
   background: url(../images/conditions/slide-prev.png) no-repeat center !important;
   background-size: contain;
 }
 
-.pc-get-assessed-sec .slick-next:before {
+.pc-get-assessed-sec .slick-next:before,.about-experts .slick-next:before {
   background: url(../images/conditions/slide-next.png) no-repeat center !important ;
   background-size: contain;
 }
-.pc-get-assessed-sec .slick-next {
+.pc-get-assessed-sec .slick-next,.about-experts .slick-next {
   right: 10rem;
   left: auto;
 }
-.pc-get-assessed-sec .slick-prev {
+.pc-get-assessed-sec .slick-prev,.about-experts .slick-prev {
   right: 16rem;
   left: auto;
 }
 .pc-get-assessed-sec .slick-next,
-.pc-get-assessed-sec .slick-prev {
+.pc-get-assessed-sec .slick-prev,.about-experts .slick-next,
+.about-experts .slick-prev  {
   top: -10rem;
 }
 .pc-get-assessed-sec .slick-slide:nth-child(2n + 1) {
@@ -3174,7 +3177,60 @@ select:focus {
   padding: 1.3rem 3.2rem;
   margin-top: 3.5rem;
 }
-
+.experts-section{
+  background:linear-gradient(#FFF7EA 60%, #ffffff 40%) ;
+}
+.experts-section .title-box:before{
+  content: "";
+  display: block;
+  background: url(../images/doc-top-ellipse.png) no-repeat center;
+  background-size: contain;
+  width: 21%;
+    height: 33%;
+    position: absolute;
+    top: -20%;
+    left: -18%;
+    transform: rotate(-90deg);
+}
+.experts-section .about-experts .img-container::after{
+content: "";
+width: 100%;
+height: 90%;
+position: absolute;
+bottom: 0;
+left: -0;
+background: linear-gradient(180deg, #222e4600 68.31%, #222E46 100%);
+z-index: 0;
+}
+.experts-section .about-experts .info{
+  position: absolute;
+  bottom: 10%;
+  left:12% ;
+  right:4%;
+  z-index: 1;
+}
+.experts-section .info p{
+  font-size: 1.4rem;
+  letter-spacing: -.04rem;
+  margin-top: .5rem;
+}
+.experts-section .about-experts .slick-slide{
+  margin-right: 2.5rem;
+}
+.about-experts .slick-prev:before {
+  background: url(../images/career-page/how-can-prev.png) no-repeat center !important;
+  background-size: contain;
+}
+.about-experts .slick-prev:before,
+.about-experts .slick-next:before{
+opacity: 1;
+}
+.about-experts .slick-next, .about-experts .slick-prev{
+  top: -40%;
+}
+.about-experts .slick-prev{
+  right: 19%;
+}
 .about-testimonial .img-container img {
   width: 100%;
   border-radius: 0 0 0 5rem;

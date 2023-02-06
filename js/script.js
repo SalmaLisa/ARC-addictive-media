@@ -190,3 +190,20 @@ $(".credentials").slick({
     },
   ],
 });
+$(".about-experts").slick({
+  dots: false,
+  infinite: true,
+  autoplay: true,
+  speed: 300,
+  slidesToShow:3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint:768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
