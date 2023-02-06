@@ -8,12 +8,6 @@ $(".fp-blog-card-container").slick({
   autoplaySpeed: 2000,
   responsive: [
     {
-      breakpoint: 1025,
-      settings: {
-        slidesToShow: 2,
-      },
-    },
-    {
       breakpoint: 768,
       settings: {
         slidesToShow: 1,
@@ -190,6 +184,7 @@ $(".credentials").slick({
     },
   ],
 });
+
 $(".about-experts").slick({
   dots: false,
   infinite: true,
@@ -201,12 +196,13 @@ $(".about-experts").slick({
     {
       breakpoint:768,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
       },
     },
   ],
 });
+
 $(".testimonial-container").slick({
   dots: false,
   infinite: true,
