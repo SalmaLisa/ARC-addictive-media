@@ -211,3 +211,6 @@ $(".testimonial-container").slick({
   slidesToShow:1,
   slidesToScroll: 1,
 });
+
+//testimonial page
+
