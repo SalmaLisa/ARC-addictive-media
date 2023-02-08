@@ -4182,6 +4182,9 @@ padding: 2rem 0;
     margin-left: -5rem;
     margin-bottom: 6rem;
   }
+  .blog-card-container:after{
+    display: none;
+  }
   .home-blog-section .blog-card-container .mobile-card {
     display: block;
   }
@@ -4702,7 +4705,14 @@ padding: 2rem 0;
   }
   .career-banner .banner-title {
     line-height: 14rem;
+    font-size: 11rem;
+    margin-top: 7rem;
   }
+  .career-banner .banner-arrow {
+    margin-top: 11.4rem;
+    height: 15rem;
+    width: 4rem;
+}
   .career-banner {
     background-position: 100% 0;
   }
