@@ -212,5 +212,5 @@ $(".testimonial-container").slick({
   slidesToScroll: 1,
 });
 
-//testimonial page
+
 

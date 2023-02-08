@@ -287,7 +287,7 @@ body {
 /* common css for ARC start*/
 
 h1 {
-  font-size: 5rem;
+  font-size: 5.2rem;
   font-weight: 600;
   line-height: 6.3rem;
 }
@@ -397,7 +397,9 @@ p {
 .p-relative {
   position: relative;
 }
-
+.banner-padding{
+  padding: 11.5rem 0;
+}
 /* common css end*/
 /*feed page banner section */
 .fp-banner-section {
@@ -412,13 +414,13 @@ p {
 .fp-banner-section .fp-banner-text {
   margin-top: 1.6rem;
 }
-.fp-banner-section .fp-banner-arrow {
+.banner-arrow {
   margin-top: 5.6rem;
   margin-left: 0.6rem;
   width: 1.5rem;
   height: 6rem;
 }
-.fp-banner-section .fp-banner-arrow img {
+.banner-arrow img {
   width: 100%;
 }
 /*feed page details section */
@@ -550,16 +552,16 @@ p {
 .fp-appointment-section .card-container {
   margin-top: 6rem;
 }
-.fp-appointment-section .card-container .card {
+.appoint-card-container .card {
   padding: 0 2rem;
 }
-.fp-appointment-section .card-container li img {
+.appoint-card-container li img {
   width: 3.3rem;
   height: 3.3rem;
   object-fit: scale-down;
   margin-bottom: 1.8rem;
 }
-.fp-appointment-section .card-title {
+ .appoint-card-title {
   font-size: 1.5rem;
   line-height: 1.8rem;
   font-weight: 300;
@@ -574,7 +576,7 @@ p {
 .border-e-1 {
   border-right: 1px solid #d9d9d999;
 }
-.fp-appointment-section .info-wrapper {
+.appoint-info-wrapper {
   padding: 8rem 0;
 }
 .fp-appointment-section form {
@@ -1707,22 +1709,22 @@ body .need-help-section {
 .pc-assess-resource-sec {
   background: url(../images/conditions/pc-btm-banner.png) no-repeat center;
   background-size: cover;
-  padding: 15rem 0;
   color: #fff;
 }
-.pc-assess-resource-sec .content {
-  padding-left: 6rem;
+.pc-assess-pad{
+   padding: 15rem 0;
 }
+
 .pc-assess-resource-sec .header-small-text {
   color: #fff;
 }
-.pc-assess-resource-sec .info-box h2 {
+.assess-resource-info-box h2 {
   margin: 1.5rem 0;
 }
-.pc-assess-resource-sec .info-box .text {
+.assess-resource-info-box .text {
   width: 43%;
 }
-.pc-assess-resource-sec .info-box .know-more-btn {
+ .assess-resource-info-box .know-more-btn {
   padding: 1.4rem 5rem;
   font-weight: 500;
   font-size: 1.3rem;
@@ -1736,17 +1738,19 @@ body .need-help-section {
   background: url(../images/team-list/team-list-banner.png) no-repeat top;
   background-size: cover;
 }
-.tl-banner-section .tl-banner-title {
+.tl-banner-section .banner-info-container {
+  margin-top: 6rem;
+}
+.tl-banner-section .banner-title {
   line-height: 5.3rem;
 }
-.tl-banner-section .tiny-text {
+.banner-tiny-text {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 18px;
-  margin-bottom: 55px;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
   display: inline-block;
 }
-.tl-banner-section .tiny-text .colored {
+.banner-tiny-text .colored {
   color: #adadad;
 }
 
@@ -2046,7 +2050,7 @@ select:focus {
   width: 5rem;
   height: 6rem;
   top: 0;
-  left: -126px;
+  left: -9rem;
 }
 .ap-diff-assess-sec .cards::after {
   content: "";
@@ -2056,8 +2060,8 @@ select:focus {
   position: absolute;
   width: 8rem;
   height: 4rem;
-  bottom: 30px;
-  right: -126px;
+  bottom: 2rem;
+  right: -7rem;
 }
 .ap-diff-assess-sec .card {
   padding: 3rem 1.4rem;
@@ -2202,11 +2206,14 @@ select:focus {
   background: url(../images/career-page/career-banner.png) no-repeat center;
   background-size: cover;
 }
-.career-banner .career-banner-title {
-  line-height: 6rem;
+.career-banner .banner-title {
+  line-height: 5.8rem;
+  font-weight: 500;
+  font-size: 5rem;
 }
-.career-banner .fp-banner-arrow {
-  margin-top: 4rem;
+.career-banner .banner-arrow {
+  margin-top: 4.4rem;
+  height: 5.5rem;
 }
 .be-well-sec {
   margin-top: 5rem;
@@ -2328,6 +2335,7 @@ select:focus {
 }
 .get-feel-section .content {
   padding: 8rem 0;
+  width: 92%;
 }
 .get-feel-section .header h2 {
   font-size: 3.3rem;
@@ -2432,6 +2440,7 @@ select:focus {
 }
 .meta-data img {
   margin-right: 1rem;
+  width: 6.2rem;
 }
 .career-testimonial-container .slick-prev:before,
 .career-testimonial-container .slick-next:before {
@@ -2596,8 +2605,12 @@ select:focus {
   background: url(../images/insurance/insu-top-banner.png) no-repeat center;
   background-size: cover;
 }
-.insurance-banner .com-padding {
-  padding-bottom: 7rem;
+.insurance-banner .banner-padding{
+  padding-bottom: 9rem;
+}
+.insurance-banner .banner-title{
+  font-size: 5rem;
+  line-height: 5.8rem;
 }
 .strong-motive h4 {
   font-weight: 800;
@@ -2832,12 +2845,22 @@ select:focus {
 .insu-know-more {
   background: url(../images/insurance/insu-btm-banner.png) no-repeat center;
   background-size: cover;
-  padding: 14rem 0;
+  padding: 13rem 0 14rem;
 }
-.insu-know-more .info-box .text {
+.insu-know-more .header-small-text{
+  color: #fff;
+  font-weight: 300;
+}
+.insu-know-more .assess-resource-info-box .know-more-btn{
+  padding: 1.4rem 4rem;
+}
+.assess-resource-info-box .text {
   margin: 0 0 0.5rem;
 }
-.insu-know-more .info-box h2 {
+.insu-know-more .assess-resource-info-box{
+  margin-left: 7rem;
+}
+.insu-know-more .assess-resource-info-box h2 {
   margin-bottom: 1rem;
 }
 .insu-FAQ-sec .com-padding {
@@ -2883,7 +2906,7 @@ select:focus {
 .assess-detail-banner .banner-title br {
   display: none;
 }
-.assess-detail-banner .card-container {
+.assess-detail-banner .appoint-card-container {
   margin-top: 5rem;
 }
 .assess-detail-banner .com-padding {
@@ -3009,6 +3032,13 @@ select:focus {
   background: url(../images/about/about-banner.png) no-repeat center;
   background-size: cover;
 }
+.banner-info-container{
+  margin-top: 7rem;
+}
+.about-banner .banner-title{
+  line-height: 5.3rem;
+}
+.about-banner 
 .strong-ethics-section .statement-container:before {
   content: "";
   display: block;
@@ -3317,7 +3347,8 @@ width: 44%;
   right: 85%;
 }
 .testimonial-container .slick-prev{
-  left: 0;
+  left: auto;
+  right: 97%;
 }
 /*======= Explore Testimonials page =======*/
 .testimonial-banner{
@@ -3557,27 +3588,27 @@ padding: 2rem 0;
   .fp-appointment-section .content {
     flex-direction: column;
   }
-  .fp-appointment-section .info-wrapper {
+  .appoint-info-wrapper {
     width: 100%;
     margin-bottom: 3rem;
   }
-  .fp-appointment-section .card-container {
+  .appoint-card-container {
     flex-direction: column;
     margin-bottom: 6rem;
   }
-  .fp-appointment-section .card-container .card {
+  .appoint-card-container .card {
     margin: 2rem 0;
     border: none;
     display: flex;
     align-items: center;
     padding: 0;
   }
-  .fp-appointment-section .card-title {
+  .appoint-card-title {
     font-size: 4rem;
     line-height: 5rem;
     margin-left: 3rem;
   }
-  .fp-appointment-section .card-container li img {
+ .appoint-card-container li img  {
     width: 8rem;
     height: 10rem;
   }
@@ -4303,6 +4334,10 @@ padding: 2rem 0;
   .td-title {
     margin-bottom: 4rem;
   }
+  .tl-banner-section .banner-title {
+    line-height: 12rem;
+    margin-top: 7rem;
+}
   .t-detail-banner .content {
     padding-left: 0;
   }
@@ -4413,6 +4448,8 @@ padding: 2rem 0;
   }
   .pc-most-common-sec .title-box h2 {
     margin: 3rem 0;
+    font-size: 7rem;
+    line-height: 8.2rem;
   }
   .pc-most-common-sec .cards .ball-ellipse {
     margin-right: 22px;
@@ -4431,16 +4468,17 @@ padding: 2rem 0;
     width: 100%;
   }
   .pc-most-common-sec .cards .card-com::before {
-    width: 7%;
+    width: 13%;
     height: 20%;
+    bottom: -3rem;
   }
   .pc-most-common-sec .card {
     display: flex;
     align-items: center;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     margin-right: 0;
     border-radius: 0 5rem 5rem 5rem;
-    padding-bottom: 3rem;
+    padding: 7rem;
   }
   .pc-most-common-sec .card img {
     width: 11.7rem;
@@ -4528,21 +4566,27 @@ padding: 2rem 0;
   .pc-get-assessed-sec .slick-prev {
     top: -16rem;
   }
-  .pc-assess-resource-sec .info-box h2 br {
+  .assess-resource-info-box h2 br {
     display: none;
   }
-  .pc-assess-resource-sec .info-box .text {
+  .assess-resource-info-box h2{
+    margin: 3rem 0;
+  }
+  .assess-resource-info-box .text {
     width: 85%;
   }
-  .pc-assess-resource-sec .info-box .know-more-btn {
+  .assess-resource-info-box .know-more-btn {
     padding: 3.4rem 10rem;
     font-size: 3rem;
     line-height: 4rem;
     border-radius: 2.3rem;
+    margin-top: 8rem;
   }
-  .pc-assess-resource-sec {
-    padding: 22rem 0;
+  .pc-assess-resource-sec { 
     background-position: 84% 0;
+  }
+  .pc-assess-pad{
+    padding: 22rem 0;
   }
   /*========== assessment process page =============*/
   .ap-banner-section .img-container {
@@ -4649,11 +4693,14 @@ padding: 2rem 0;
   .ap-know-more-cards .slick-prev {
     top: -9rem;
   }
+  .ap-assess-resource-sec .header-small-text{
+    color: #fff;
+  }
   /*=========== career page ===========*/
-  .career-banner .career-banner-title br {
+  .career-banner .banner-title br {
     display: none;
   }
-  .career-banner .career-banner-title {
+  .career-banner .banner-title {
     line-height: 14rem;
   }
   .career-banner {
@@ -4677,17 +4724,13 @@ padding: 2rem 0;
     padding-bottom: 0;
   }
   .how-can-grow-sec .how-grow-slide p {
-    bottom: 22rem;
-    left: 11rem;
+    bottom: 20rem;
+    left: 5rem;
     font-size: 5rem;
     line-height: 6.5rem;
   }
   .how-can-grow-sec .info img {
     width: 100rem;
-  }
-
-  .how-can-grow-sec .how-grow-slider {
-    margin-left: -7rem;
   }
   .how-grow-slider .slick-next,
   .how-grow-slider .slick-prev {
@@ -4708,7 +4751,7 @@ padding: 2rem 0;
     margin-top: 10rem;
   }
   .how-can-grow-sec .how-grow-slider .slick-slide {
-    margin-right: 8rem;
+    margin-right: 5rem;
   }
   .strong-ethics-sec .header {
     margin-bottom: 9rem;
@@ -4727,6 +4770,7 @@ padding: 2rem 0;
   }
   .get-feel-section .content {
     padding: 11rem 0;
+    width: 100%;
   }
   .get-feel-section .header .para {
     line-height: 5.8rem;
@@ -4756,7 +4800,6 @@ padding: 2rem 0;
     top: -3.5rem;
     left: 47rem;
   }
-
   .get-feel-section .gallery li:nth-child(2) {
     width: 35rem;
     margin-right: 0;
@@ -4947,11 +4990,16 @@ padding: 2rem 0;
   }
   /*======= Fee and insurance page ========*/
   .insurance-banner {
-    background-position: 45% 20%;
+    background-position: 43% 20%;
   }
-  .insu-banner-title {
+  .insurance-banner .banner-padding {
+    padding-bottom: 30rem;
+}
+  .insurance-banner .banner-title {
     font-size: 11rem;
-  }
+    line-height: 13rem;
+    margin-top: 7rem;
+}
   .strong-motive .mobile-view {
     margin-top: 10rem;
   }
@@ -5135,6 +5183,9 @@ padding: 2rem 0;
     padding: 22rem 0;
     background-position: 29% 0;
   }
+  .insu-know-more .assess-resource-info-box .know-more-btn{
+    padding: 3.2rem 8rem;
+  }
   .insu-FAQ-sec .question h4 {
     font-size: 4.5rem;
   }
@@ -5149,21 +5200,21 @@ padding: 2rem 0;
     padding: 5rem 0;
   }
   /*==== Assessment details =====*/
-  .assess-detail-banner .info-wrapper {
+  .assess-detail-banner .appoint-info-wrapper {
     padding: 25rem 0;
   }
   .assess-detail-banner .banner-title br {
     display: block;
   }
-  .assess-detail-banner .info-wrapper .card-list li {
+  .assess-detail-banner .appoint-info-wrapper .card-list li {
     border-bottom: 1px solid #d9d9d9;
     padding: 4rem 0;
     margin: 0;
   }
-  .assess-detail-banner .info-wrapper .card-list {
+  .assess-detail-banner .appoint-info-wrapper .card-list {
     width: 57%;
   }
-  .assess-detail-banner .info-wrapper .card-list li:first-child {
+  .assess-detail-banner .appoint-info-wrapper .card-list li:first-child {
     border-top: 1px solid #d9d9d9;
     margin-top: 5rem;
   }
@@ -5261,7 +5312,23 @@ padding: 2rem 0;
   .about-banner {
     background-position: 67% 20%;
 }
-
+.about-banner .banner-title {
+  line-height: 11.3rem;
+  margin-top: 7rem;
+}
+.banner-tiny-text{
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+.banner-arrow {
+  margin-left: 2.6rem;
+    width: 3rem;
+    height: 15rem;
+    margin-top: 16rem;
+}
+.banner-padding {
+  padding: 35rem 0;
+}
 .strong-ethics-section .statement-container:after,.strong-ethics-section .statement-container:before{
   display: none;
 }
@@ -5430,15 +5497,15 @@ padding: 2rem 0;
   right: 6%;
 }
 .testimonial-container .slick-prev {
-  left: 81%;
+  right: 16%;
 }
 
 /*==== testimonial page =====*/
 .testimonial-banner {
   background-position: 61% 20%;
 }
-.testimonial-banner .testi-banner-title {
-  line-height: 14rem;
+.testimonial-banner .banner-title {
+  margin-top: 7rem;
 }
 .testimonials-section .btns-container{
   text-align: center;
