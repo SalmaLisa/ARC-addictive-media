@@ -757,7 +757,7 @@ body .home-banner .content {
   margin: 1.2rem 0;
   width: 64%;
 }
-.home-banner .explore-button {
+.banner-button {
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.6rem;
@@ -766,10 +766,10 @@ body .home-banner .content {
   border-radius: 3rem;
   margin-top: 1.7rem;
 }
-.home-banner .explore-button span {
+.banner-button span {
   margin-right: 3rem;
 }
-.home-banner .explore-button img {
+.banner-button img {
   width: 2rem;
 }
 .home-banner .banner-part2,
@@ -3449,6 +3449,45 @@ padding: 2rem 0;
 .testimonials-section  .pagination:after{
   right: 3rem;
 }
+/* blog List page */
+.blogList-banner{
+  background: url(../images/blogList/banner.png) no-repeat center;
+  background-size: cover;
+}
+.blog-card-section .content{
+  padding: 6rem 0;
+}
+.blogList-banner .banner-title{
+  line-height: 5.2rem;
+  font-weight: 500;
+}
+.blogList-banner .banner-button span {
+  margin-right: 1.8rem;
+}
+.blogList-banner .banner-info-container {
+  margin-top: 6rem;
+}
+.bl-btns-container p {
+font-size: 2rem;
+letter-spacing: -.04rem;
+}
+.bl-btns-container a{
+padding: .5rem 2rem;
+font-size: 1.6rem;
+border: 1px solid#31C2F5;
+margin-left: 1.1rem;
+border-radius: .5rem;
+letter-spacing: -.04rem;
+}
+.bl-btns-container .btns a:first-child{
+  padding: .5rem 5rem;
+  background-color: #31C2F5;
+  color: #fff;
+  margin-left: 1.5rem;
+}
+.bl-list-card .info p{
+  color: #838383;
+}
 @media all and (max-width: 767px) {
   .m-w-100 {
     width: 100%;
@@ -3837,13 +3876,13 @@ padding: 2rem 0;
     margin-top: 30rem;
     margin-left: 6rem;
   }
-  .home-banner .explore-button {
+  .banner-button {
     padding: 3rem 6rem;
     font-size: 3rem;
     margin-top: 3rem;
     border-radius: 5rem;
   }
-  .home-banner .explore-button img {
+  .banner-button img {
     width: 4rem;
   }
   .different-assessment-section .ass-top-section {
