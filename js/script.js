@@ -216,14 +216,15 @@ $(".testimonial-container").slick({
 $(".related-article-container").slick({
   dots: false,
   infinite: true,
-  autoplay: false,
+  autoplay: true,
   speed: 300,
-  slidesToShow:2,
+  slidesToShow:2.1,
   slidesToScroll: 1,
   responsive: [
     {
       breakpoint:768,
       settings: {
+        centerMode:true,
         slidesToShow: 1,
         slidesToScroll: 1,
       },
