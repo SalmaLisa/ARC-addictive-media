@@ -397,6 +397,9 @@ p {
 .p-relative {
   position: relative;
 }
+.p-absolute {
+  position: absolute;
+}
 .banner-padding{
   padding: 11.5rem 0;
 }
@@ -3485,8 +3488,47 @@ letter-spacing: -.04rem;
   color: #fff;
   margin-left: 1.5rem;
 }
+.bl-list-card .info h4{
+  width: 72%;
+  line-height: 2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -.06rem;
+  color: #000000 ;
+}
 .bl-list-card .info p{
   color: #838383;
+  margin-top: .6rem;
+}
+.bl-card-btn{
+  border-bottom: 1px solid #954C9D;
+  width: 23%;
+  padding-bottom: .5rem;
+}
+.bl-card-btn span{
+  font-size: 1.2rem;
+  color: #954C9D;
+}
+.bl-card-btn img{
+  width: .9rem;
+  margin-left: 1.5rem;
+}
+.bl-card-tag{
+  top: 4%;
+    left: 6%;
+    background-color: #31C2F5;
+    color: #fff;
+    padding: 0 1.3rem;
+    border-radius: 1.3rem;
+    font-size: 1rem;
+}
+.bl-list-card:nth-child(2n+1){
+  margin-right: 2.7rem;
+  margin-bottom: 6rem;
+}
+.bl-list-card:nth-child(2n+2){
+  margin-left: 2.7rem;
+  margin-top: 6rem;
 }
 @media all and (max-width: 767px) {
   .m-w-100 {
