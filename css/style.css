@@ -3475,18 +3475,18 @@ font-size: 2rem;
 letter-spacing: -.04rem;
 }
 .bl-btns-container a{
-padding: .5rem 2rem;
+padding: .5rem 1.9rem;
 font-size: 1.6rem;
 border: 1px solid#31C2F5;
 margin-left: 1.1rem;
 border-radius: .5rem;
 letter-spacing: -.04rem;
+font-weight: 600;
 }
 .bl-btns-container .btns a:first-child{
-  padding: .5rem 5rem;
+  padding: .5rem 4.1rem;
   background-color: #31C2F5;
   color: #fff;
-  margin-left: 1.5rem;
 }
 .bl-list-card .info h4{
   width: 72%;
@@ -3499,6 +3499,8 @@ letter-spacing: -.04rem;
 .bl-list-card .info p{
   color: #838383;
   margin-top: .6rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 .bl-card-btn{
   border-bottom: 1px solid #954C9D;
@@ -5657,5 +5659,50 @@ height: 20rem;
 }
 .testimonials-section .pagination button {
   padding: 1.6rem 3rem;
+}
+/* blog list page */
+.blogList-banner .banner-title {
+  line-height: 12rem;
+  margin: 7rem 0 11rem;
+}
+.bl-btns-container a{
+  font-size: 2rem;
+}
+.bl-btns-container p{
+  font-size:3rem ;
+  margin-top: 5rem;
+}
+.bl-cards-container{
+  grid-template-columns: 1fr;
+}
+.bl-list-card:nth-child(2n+1),.bl-list-card:nth-child(2n+2){
+margin: 5rem 0 8rem;
+}
+.bl-card-tag {
+  top: 6%;
+  padding: 1.3rem 5rem;
+  border-radius: 4rem;
+  font-size: 3rem;
+}
+.bl-list-card .info h4 {
+  line-height: 5rem;
+  font-size: 4rem;
+  margin-top: 5rem;
+}
+.bl-list-card .info p {
+  margin: 2rem 0 5rem;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+.bl-card-btn span {
+  font-size: 2.7rem;
+}
+.bl-card-btn img {
+  width: 2.5rem;
+  margin-left: 3rem;
+}
+.bl-card-btn {
+  width: 20%;
+  padding-bottom: 1.2rem;
 }
 }
