@@ -212,5 +212,23 @@ $(".testimonial-container").slick({
   slidesToScroll: 1,
 });
 
+//  blog detail page
+$(".related-article-container").slick({
+  dots: false,
+  infinite: true,
+  autoplay: false,
+  speed: 300,
+  slidesToShow:2,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint:768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
 
 

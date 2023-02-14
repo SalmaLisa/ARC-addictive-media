@@ -403,6 +403,10 @@ p {
 .banner-padding{
   padding: 11.5rem 0;
 }
+.img-fluid{
+  width: 100%;
+  height: 100%;
+}
 /* common css end*/
 /*feed page banner section */
 .fp-banner-section {
@@ -1679,17 +1683,17 @@ body .need-help-section {
   background-size: contain !important;
 }
 .pc-get-assessed-sec .slick-next,.about-experts .slick-next {
-  right: 10rem;
+  right: 13%;
   left: auto;
 }
 .pc-get-assessed-sec .slick-prev,.about-experts .slick-prev {
-  right: 16rem;
+  right: 20%;
   left: auto;
 }
 .pc-get-assessed-sec .slick-next,
 .pc-get-assessed-sec .slick-prev,.about-experts .slick-next,
-.about-experts .slick-prev  {
-  top: -10rem;
+.about-experts .slick-prev {
+  top: -40%;
 }
 .pc-get-assessed-sec .slick-slide:nth-child(2n + 1) {
   background-color: #fff7ea;
@@ -2780,7 +2784,8 @@ select:focus {
   margin-right: 3.1rem;
 }
 .fee-cards-container .slick-prev:before,
-.fee-cards-container .slick-next:before {
+.fee-cards-container .slick-next:before,.related-article-container .slick-prev:before,
+.related-article-container .slick-next:before  {
   content: "";
   width: 3rem;
   height: 3rem;
@@ -2788,11 +2793,11 @@ select:focus {
   display: block;
   opacity: 1;
 }
-.fee-cards-container .slick-prev:before {
+.fee-cards-container .slick-prev:before,.related-article-container .slick-prev:before{
   background: url(../images/career-page/how-can-prev.png) no-repeat center !important;
   background-size: cover !important;
 }
-.fee-cards-container .slick-next:before {
+.fee-cards-container .slick-next:before,.related-article-container .slick-next:before {
   background: url(../images/conditions/slide-next.png) no-repeat center !important ;
   background-size: cover !important;
 }
@@ -3531,6 +3536,117 @@ font-weight: 600;
 .bl-list-card:nth-child(2n+2){
   margin-left: 2.7rem;
   margin-top: 6rem;
+}
+/*===== blog details page =====*/
+.blog-detail-page .text{
+font-size: 1.4rem;
+line-height: 1.9rem;
+letter-spacing: -.06rem;
+}
+.blog-detail-page h2{
+  font-size: 3.3rem;
+  letter-spacing: -.15rem;
+}
+.blog-detail-page h3{
+  letter-spacing: -.1rem;
+}
+.blog-detail-banner{
+  padding-bottom: 5rem;
+}
+.blog-detail-banner .title-box .bl-card-tag{
+display: inline-block;
+}
+.blog-detail-banner .title-box h2 {
+  font-size: 4.1rem;
+  line-height: 4.5rem;
+  letter-spacing: -.2rem;
+}
+.blog-detail-banner .banner{
+  height: 42.5rem;
+}
+.bd-img-container{
+  height: 37.5rem;
+}
+.blog-detail .blockquote{
+  padding-left: 1.2rem;
+  border-left: .4rem solid #00A2D9;
+}
+.blog-detail .blockquote .text{
+margin: 0;
+margin-left: 1rem;
+font-style: italic;
+line-height: 2.1rem;
+letter-spacing: -.04rem;
+}
+.blog-detail .list-container{
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+.blog-detail .list-container .text{
+  margin: .7rem 0;
+}
+.about-author{
+  padding: 4rem;
+  margin: 6.5rem 0 10rem;
+}
+.about-author .info{
+  width: 68%;
+}
+.about-author .title img{
+  width: 2.5rem;
+  margin-right: 1rem;
+}
+.about-author .img-container{
+  width: 18%;
+}
+.about-author::before {
+  content: "";
+  display: block;
+  background: url(../images/career-page/get-feel-top.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  width: 11%;
+    height: 22%;
+    top: -7%;
+    right: -5%;
+}
+.about-author::after {
+  content: "";
+  display: block;
+  background: url(../images/career-page/get-feel-left.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  width: 11%;
+  height: 17%;
+    bottom: 0;
+    left: -5%;
+  transform:scaleX(-1) rotate(-90deg);
+}
+.related-articles-sec .bl-card-btn{
+  width: 25%;
+}
+.related-articles-sec .content{
+  padding: 8rem 0 2rem;
+}
+.related-articles-sec h2 {
+  font-size: 3.1rem;
+  font-weight: 700;
+}
+.related-article-container .slick-next,
+.related-article-container .slick-prev  {
+  top: -15%;
+}
+.related-article-container .slick-prev:before, .related-article-container .slick-next:before {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.related-article-container .slick-prev{
+  right: 16%;
+  left: auto;
+}
+.related-article-container .slick-next{
+  right: 10%;
+  left: auto;
 }
 @media all and (max-width: 767px) {
   .m-w-100 {
