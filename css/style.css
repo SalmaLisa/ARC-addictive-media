@@ -6009,5 +6009,14 @@ select:focus {
 .ContactPage-formSec .form-sec form {
   padding: 13rem 8.5rem;
 }
-
+.ContactPage-formSec form .submit-btn{
+  border-radius: 0 3rem 3rem 3rem;
+}
+.ContactPage-formSec .contact-number {
+  font-size: 4rem;
+}
+.ContactPage-formSec .contact-number img {
+  width: 4rem;
+  margin-right: 2rem;
+}
 }
